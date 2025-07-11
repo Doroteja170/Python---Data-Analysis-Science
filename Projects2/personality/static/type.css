@@ -1,0 +1,47 @@
+body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #f3e8ff; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    }
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    color: #4b0082;
+    font-size: 1.2rem;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+#bounce {
+        color: #6a0dad; 
+        font-weight: 800;
+        animation: bounce 2s infinite;
+        display: inline-block;
+    }
+
+img {
+    max-width: 400px;
+    margin-top: 20px;
+    }
+
+@keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        }
+

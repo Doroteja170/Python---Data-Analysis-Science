@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    margin:0;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color:#bf5afe;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a1b9a, #ab47bc);
+    padding: 20px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    max-width: 750px;
+    margin: 20px auto 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.question-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.options label {
+    background-color: #f1f1f1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.options label:hover {
+    background-color: #e0e0e0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    float: none; 
+    align-self: auto;
+}
+
+
+button[type="submit"] {
+    background-color: #84007d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+    align-self: flex-end;
+    float: right;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b0066;
+}
+
+button[type="reset"] {
+    background-color: #84007d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+    align-self: flex-end;
+    float: right;
+}
+
+button[type="reset"]:hover {
+    background-color: #6b0066;
+}
+
+.options label {
+    background-color: #e8e0ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.options label:hover {
+    background-color: #d1c2f2;
+}
+
+.options input[type="radio"] {
+    accent-color: #6a1b9a; 
+    margin-right: 5px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Personality Test</title>
+</head>
+<body>
+    <header><h1>Personality Test</h1></header>
+
+    <form action="/" method="POST">
+        <div class="question">
+            <div class="question-title">1. How energetic are you in social settings? (1 - Not at all energetic, 10 - Extremely energetic)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q1" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">2. Do you prefer spending time alone or with others? (1 - Strongly prefer being with people, 10 - Strongly prefer being alone)  </div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q2" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">3. How talkative are you? (1 - Not at all talkative, 10 - Very talkative)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q3" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">4. How comfortable do you feel in group settings? (1 - Not comfortable at all, 10 - Very comfortable)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q4" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">5. How outgoing are you at social events or parties? (1 - Not outgoing at all, 10 - Very outgoing)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q5" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">6. Do you see yourself as a natural leader? (1 - Not at all, 10 - Absolutely)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q6" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">7. How comfortable are you with public speaking? (1 - Not comfortable at all, 10 - Very comfortable)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q7" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">8. Do you find it easy to make new friends?  (1 - Not easy at all, 10 - Very easy)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q8" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="question-title">9. How much time do you typically spend online? (1 - Very little, 10 - A lot)</div>
+            <div class="options">
+                {% for i in range(1, 11) %}
+                <label><input type="radio" name="q9" value="{{ i }}" required>{{ i }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
