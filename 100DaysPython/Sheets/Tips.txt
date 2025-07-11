@@ -1,0 +1,39 @@
+"""
+espresso = 50ml water 18g coffee, price=1.50
+latte= 200ml water 150ml milk 24g coffe, price=2.50
+cappuccino = 250ml water 24g coffee 100ml milk, price=3.00
+
+resources:
+water= 300ml
+milk=200ml
+coffe=100g
+
+coin operated:
+1cent =0.01
+5cents = 0.05
+10cents = 0.10
+25cents = 0.25
+
+1. Print report
+What would you like(espresso/latter/cappuccino): report
+Water:
+Milk:
+Coffe:
+Money:
+
+What would you like(espresso/latter/cappuccino): latte
+Please insert coins.
+How many quarters?:
+How many dimes?:
+How many nickles?:
+How many pennies?:
+Here is 2.00$ in change.
+Here is your latte. Enjoy!
+
+What would you like(espresso/latter/cappuccino): cappuccino
+Sorry there is not enough water.
+What would you like(espresso/latter/cappuccino):
+
+
+Sorry that's not enough money. Money refunded.
+"""
